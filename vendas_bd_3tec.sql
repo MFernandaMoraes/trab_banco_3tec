@@ -6,8 +6,8 @@ create table login(
 	user varchar(255),
 	passaword varchar(255),
 	id int(11) primary key auto_increment,
-	login_id int(11) primary key auto_increment,
-	responsavel_id int(11) primary key auto_increment
+	login_id int(11),
+	responsavel_id int(11)
 );
 
 create table agenda(
@@ -81,3 +81,21 @@ create table consumivel(
 	id int(11) primary key auto_increment,
 	estoque_id int(11)
 );
+
+create table estetica(
+	venda varchar(255),
+    agenda varchar(255),
+    id int(11) primary key auto_increment,
+    agenda_id int(11)
+);
+
+create table endereco(
+rua varchar(255),
+bairro varchar(255),
+numero varchar(255),
+cep varchar(255),
+complemento varchar(255),
+id int(11) primary key auto_increment,
+loja_id int(11)
+);
+
