@@ -90,12 +90,22 @@ create table estetica(
 );
 
 create table endereco(
-rua varchar(255),
-bairro varchar(255),
-numero varchar(255),
-cep varchar(255),
-complemento varchar(255),
-id int(11) primary key auto_increment,
-loja_id int(11)
+	rua varchar(255),
+	bairro varchar(255),
+	numero varchar(255),
+	cep varchar(255),
+	complemento varchar(255),
+	id int(11) primary key auto_increment,
+	loja_id int(11)
 );
 
+create table responsavel(
+	nome varchar(255),
+    email varchar(255),
+    telefone varchar(255),
+    cpf varchar(255),
+    endereco varchar(255),
+    id int(11) primary key auto_increment,
+    endereco_id int(11),
+    pet_id int(11)
+);
